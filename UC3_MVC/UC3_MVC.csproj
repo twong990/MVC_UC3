@@ -50,6 +50,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -195,6 +197,150 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\AGREEMENT_PRODUCT.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AUDIT_INFO.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CHEQUE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CHEQUE_STATUS.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CITY.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CLAIM.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CLAIM_STATUS_CODE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CLIENT.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\COLOR.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CONTACT_INFO.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DEALERSHIP.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DEALERSHIP_AGREEMENT.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DEALERSHIP_PRODUCT.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DEPARTMENT.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EMPLOYEE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ESTIMATE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\FILE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\INSPECTION.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\INSPECTION_FILE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\INSPECTION_STATUS_CODE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\INSPECTION_TYPE_CODE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\INVOICE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\INVOICE_ORDER.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MEDIA_TYPE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ORDER.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ORDER_ITEMS.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ORDER_STATUS_CODE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PAYMENT.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROBLEM.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROBLEM_DESCRIPTION.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROBLEM_TYPE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PRODUCT.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PRODUCT_CATEGORY.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PROVINCE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\REPAIRSHOP.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SIDE_CODE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UC3Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UC3Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UC3Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UC3Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UC3Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VEHICLE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VEHICLE_MAKE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VEHICLE_OWNER.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VEHICLE_PART.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WARRANTY.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WARRANTY_STATUS.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WARRANTY_TYPE.cs">
+      <DependentUpon>UC3Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -265,6 +411,23 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <EntityDeploy Include="Models\UC3Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>UC3Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\UC3Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UC3Model.edmx</DependentUpon>
+      <LastGenOutput>UC3Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\UC3Model.edmx.diagram">
+      <DependentUpon>UC3Model.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\UC3Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UC3Model.edmx</DependentUpon>
+      <LastGenOutput>UC3Model.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Icon.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -330,6 +493,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

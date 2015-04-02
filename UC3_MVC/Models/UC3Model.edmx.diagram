@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="22c96dc814e942c29233249e95d7a131" Name="Diagram1">
+        <EntityTypeShape EntityType="UC3_Model.AGREEMENT_PRODUCT" Width="1.5" PointX="3" PointY="36.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.AUDIT_INFO" Width="1.5" PointX="0.75" PointY="34.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.CHEQUE" Width="1.5" PointX="3.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.CHEQUE_STATUS" Width="1.5" PointX="1.5" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.CITY" Width="1.5" PointX="3" PointY="45.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.CLAIM" Width="1.5" PointX="6" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.CLAIM_STATUS_CODE" Width="1.5" PointX="3.75" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.CLIENT" Width="1.5" PointX="3" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.COLOR" Width="1.5" PointX="5.75" PointY="49.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.CONTACT_INFO" Width="1.5" PointX="3" PointY="40.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.DEALERSHIP" Width="1.5" PointX="10.25" PointY="41" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.DEALERSHIP_AGREEMENT" Width="1.5" PointX="13.5" PointY="38.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.DEALERSHIP_PRODUCT" Width="1.5" PointX="13.5" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.DEPARTMENT" Width="1.5" PointX="8" PointY="46.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.EMPLOYEE" Width="1.5" PointX="10.25" PointY="46.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.ESTIMATE" Width="1.5" PointX="11.25" PointY="33.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.FILE" Width="1.5" PointX="9" PointY="36.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.INSPECTION" Width="1.5" PointX="12.5" PointY="41.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.INSPECTION_FILE" Width="1.5" PointX="17.75" PointY="40.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.INSPECTION_STATUS_CODE" Width="1.5" PointX="10.25" PointY="53.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.INSPECTION_TYPE_CODE" Width="1.5" PointX="10.25" PointY="55.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.INVOICE" Width="1.5" PointX="3" PointY="57" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.INVOICE_ORDER" Width="1.5" PointX="17.75" PointY="45.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.MEDIA_TYPE" Width="1.5" PointX="6.75" PointY="55" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.ORDER" Width="1.5" PointX="15.5" PointY="41.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.ORDER_ITEMS" Width="1.5" PointX="17.75" PointY="36.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.ORDER_STATUS_CODE" Width="1.5" PointX="13.25" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.PAYMENT" Width="1.5" PointX="5.25" PointY="45.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.PROBLEM" Width="1.5" PointX="8.25" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.PROBLEM_DESCRIPTION" Width="1.5" PointX="8.25" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.PROBLEM_TYPE" Width="1.5" PointX="6" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.PRODUCT" Width="1.5" PointX="6" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.PRODUCT_CATEGORY" Width="1.5" PointX="3.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.PROVINCE" Width="1.5" PointX="0.75" PointY="41.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.REPAIRSHOP" Width="1.5" PointX="5.25" PointY="41.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.SIDE_CODE" Width="1.5" PointX="6" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.VEHICLE" Width="1.5" PointX="8" PointY="41.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.VEHICLE_MAKE" Width="1.5" PointX="5.75" PointY="52.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.VEHICLE_OWNER" Width="1.5" PointX="11.25" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.VEHICLE_PART" Width="1.5" PointX="6" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.WARRANTY" Width="1.5" PointX="12.5" PointY="48.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.WARRANTY_STATUS" Width="1.5" PointX="10.25" PointY="50.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UC3_Model.WARRANTY_TYPE" Width="1.5" PointX="3" PointY="69.625" IsExpanded="true" />
+        <AssociationConnector Association="UC3_Model.FK_AGREEMENT_PRODUCT_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_AGREEMENT_PRODUCT_DEALERSHIP_AGREEMENT" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_AGREEMENT_PRODUCT_PRODUCT" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_CLAIM_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_CLIENT_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_CONTACT_INFO_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_DEALERSHIP_AGREEMENT_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_DEALERSHIP_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_DEALERSHIP_PRODUCT_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_EMPLOYEE_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_FILE_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_INSPECTION_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_INSPECTION_FILE_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_INVOICE_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_INVOICE_ORDER_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_ORDER_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_ORDER_ITEMS_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_PAYMENT_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_PROBLEM_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_PRODUCT_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_REPAIRSHOP_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_VEHICLE_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_VEHICLE_OWNER_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_WARRANTY_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_WARRANTY_TYPE_AUDIT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_CHEQUE_CHEQUE_STATUS" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_CLAIM_CHEQUE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_PAYMENT_CHEQUE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_CITY_PROVINCE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_CLAIM_CLAIM_STATUS_CODE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_CLAIM_CLIENT" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_CLAIM_EMPLOYEE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_CLAIM_EMPLOYEE_MANAGER" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_ESTIMATE_CLAIM" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_PROBLEM_CLAIM" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_CLIENT_CONTACT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_VEHICLE_OWNER_CLIENT" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_VEHICLE_COLOR" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_CONTACT_INFO_PROVINCE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_DEALERSHIP_CONTACT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_EMPLOYEE_CONTACT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_REPAIRSHOP_CONTACT_INFO" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_DEALERSHIP_AGREEMENT_DEALERSHIP" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_DEALERSHIP_PRODUCT_DEALERSHIP" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_INSPECTION_DEALERSHIP" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_ORDER_DEALERSHIP" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_WARRANTY_DEALERSHIP" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_DEALERSHIP_PRODUCT_PRODUCT" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_EMPLOYEE_DEPARTMENT" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_ESTIMATE_INSPECTION" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_FILE_MEDIA_TYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_INSPECTION_FILE_FILE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_INSPECTION_FILE_INSPECTION" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_INSPECTION_INSPECTION_STATUS_CODE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_INSPECTION_INSPECTION_TYPE_CODE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_INSPECTION_REPAIRSHOP" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_INSPECTION_VEHICLE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_INSPECTION_WARRANTY" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_INVOICE_ORDER_INVOICE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_PAYMENT_INVOICE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_INVOICE_ORDER_ORDER" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_ORDER_ITEMS_ORDER" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_ORDER_ORDER_STATUS_CODE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_ORDER_ITEMS_PRODUCT" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_PROBLEM_PROBLEM_TYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_PROBLEM_PRODUCT" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_PROBLEM_SIDE_CODE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_PROBLEM_VEHICLE_PART" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_PROBLEM_WARRANTY" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_PROBLEM_DESCRIPTION_PROBLEM_TYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_PRODUCT_PRODUCT_CATEGORY" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_WARRANTY_PRODUCT" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_VEHICLE_PART_SIDE_CODE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_VEHICLE_OWNER_VEHICLE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_VEHICLE_VEHICLE_MAKE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_WARRANTY_VEHICLE" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_WARRANTY_WARRANTY_STATUS" ManuallyRouted="false" />
+        <AssociationConnector Association="UC3_Model.FK_WARRANTY_WARRANTY_TYPE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
