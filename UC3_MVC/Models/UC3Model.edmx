@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
   <!-- EF Runtime content -->
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="UC3_Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="C3_Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2005" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityType Name="AGREEMENT_PRODUCT">
           <Key>
             <PropertyRef Name="ID" />
@@ -1385,7 +1385,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="UC3_ModelStoreContainer">
+        <EntityContainer Name="C3_ModelStoreContainer">
           <EntitySet Name="AGREEMENT_PRODUCT" EntityType="Self.AGREEMENT_PRODUCT" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="AUDIT_INFO" EntityType="Self.AUDIT_INFO" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CHEQUE" EntityType="Self.CHEQUE" Schema="dbo" store:Type="Tables" />
@@ -1746,7 +1746,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="UC3_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="C3_Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
         <EntityType Name="AGREEMENT_PRODUCT">
           <Key>
             <PropertyRef Name="ID" />
@@ -3283,7 +3283,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="UC3Entities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="stle2Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="AGREEMENT_PRODUCT" EntityType="Self.AGREEMENT_PRODUCT" />
           <EntitySet Name="AUDIT_INFO" EntityType="Self.AUDIT_INFO" />
           <EntitySet Name="CHEQUE" EntityType="Self.CHEQUE" />
@@ -3644,10 +3644,10 @@
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
-      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="UC3_ModelStoreContainer" CdmEntityContainer="UC3Entities">
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="C3_ModelStoreContainer" CdmEntityContainer="stle2Entities">
           <EntitySetMapping Name="AGREEMENT_PRODUCT">
-            <EntityTypeMapping TypeName="UC3_Model.AGREEMENT_PRODUCT">
+            <EntityTypeMapping TypeName="C3_Model.AGREEMENT_PRODUCT">
               <MappingFragment StoreEntitySet="AGREEMENT_PRODUCT">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="AGREEMENT_NUM" ColumnName="AGREEMENT_NUM" />
@@ -3658,7 +3658,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="AUDIT_INFO">
-            <EntityTypeMapping TypeName="UC3_Model.AUDIT_INFO">
+            <EntityTypeMapping TypeName="C3_Model.AUDIT_INFO">
               <MappingFragment StoreEntitySet="AUDIT_INFO">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="UPDATE_TS" ColumnName="UPDATE_TS" />
@@ -3669,7 +3669,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CHEQUE">
-            <EntityTypeMapping TypeName="UC3_Model.CHEQUE">
+            <EntityTypeMapping TypeName="C3_Model.CHEQUE">
               <MappingFragment StoreEntitySet="CHEQUE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CHEQUE_NUMBER" ColumnName="CHEQUE_NUMBER" />
@@ -3682,7 +3682,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CHEQUE_STATUS">
-            <EntityTypeMapping TypeName="UC3_Model.CHEQUE_STATUS">
+            <EntityTypeMapping TypeName="C3_Model.CHEQUE_STATUS">
               <MappingFragment StoreEntitySet="CHEQUE_STATUS">
                 <ScalarProperty Name="STATUS_CODE" ColumnName="STATUS_CODE" />
                 <ScalarProperty Name="STATUS_DESC" ColumnName="STATUS_DESC" />
@@ -3690,7 +3690,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CITY">
-            <EntityTypeMapping TypeName="UC3_Model.CITY">
+            <EntityTypeMapping TypeName="C3_Model.CITY">
               <MappingFragment StoreEntitySet="CITY">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CITY1" ColumnName="CITY" />
@@ -3699,7 +3699,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CLAIM">
-            <EntityTypeMapping TypeName="UC3_Model.CLAIM">
+            <EntityTypeMapping TypeName="C3_Model.CLAIM">
               <MappingFragment StoreEntitySet="CLAIM">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CLAIM_DATE" ColumnName="CLAIM_DATE" />
@@ -3721,7 +3721,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CLAIM_STATUS_CODE">
-            <EntityTypeMapping TypeName="UC3_Model.CLAIM_STATUS_CODE">
+            <EntityTypeMapping TypeName="C3_Model.CLAIM_STATUS_CODE">
               <MappingFragment StoreEntitySet="CLAIM_STATUS_CODE">
                 <ScalarProperty Name="STATUS_CODE" ColumnName="STATUS_CODE" />
                 <ScalarProperty Name="STATUS_DESC" ColumnName="STATUS_DESC" />
@@ -3729,7 +3729,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CLIENT">
-            <EntityTypeMapping TypeName="UC3_Model.CLIENT">
+            <EntityTypeMapping TypeName="C3_Model.CLIENT">
               <MappingFragment StoreEntitySet="CLIENT">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
@@ -3741,7 +3741,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="COLOR">
-            <EntityTypeMapping TypeName="UC3_Model.COLOR">
+            <EntityTypeMapping TypeName="C3_Model.COLOR">
               <MappingFragment StoreEntitySet="COLOR">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="COLOR1" ColumnName="COLOR" />
@@ -3749,7 +3749,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CONTACT_INFO">
-            <EntityTypeMapping TypeName="UC3_Model.CONTACT_INFO">
+            <EntityTypeMapping TypeName="C3_Model.CONTACT_INFO">
               <MappingFragment StoreEntitySet="CONTACT_INFO">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
@@ -3767,7 +3767,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DEALERSHIP">
-            <EntityTypeMapping TypeName="UC3_Model.DEALERSHIP">
+            <EntityTypeMapping TypeName="C3_Model.DEALERSHIP">
               <MappingFragment StoreEntitySet="DEALERSHIP">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
@@ -3779,7 +3779,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DEALERSHIP_AGREEMENT">
-            <EntityTypeMapping TypeName="UC3_Model.DEALERSHIP_AGREEMENT">
+            <EntityTypeMapping TypeName="C3_Model.DEALERSHIP_AGREEMENT">
               <MappingFragment StoreEntitySet="DEALERSHIP_AGREEMENT">
                 <ScalarProperty Name="AGREEMENT_NUM" ColumnName="AGREEMENT_NUM" />
                 <ScalarProperty Name="DEALERSHIP_ID" ColumnName="DEALERSHIP_ID" />
@@ -3790,7 +3790,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DEALERSHIP_PRODUCT">
-            <EntityTypeMapping TypeName="UC3_Model.DEALERSHIP_PRODUCT">
+            <EntityTypeMapping TypeName="C3_Model.DEALERSHIP_PRODUCT">
               <MappingFragment StoreEntitySet="DEALERSHIP_PRODUCT">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="DEALERSHIP_ID" ColumnName="DEALERSHIP_ID" />
@@ -3801,7 +3801,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DEPARTMENT">
-            <EntityTypeMapping TypeName="UC3_Model.DEPARTMENT">
+            <EntityTypeMapping TypeName="C3_Model.DEPARTMENT">
               <MappingFragment StoreEntitySet="DEPARTMENT">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="DEPTNAME" ColumnName="DEPTNAME" />
@@ -3810,7 +3810,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="EMPLOYEE">
-            <EntityTypeMapping TypeName="UC3_Model.EMPLOYEE">
+            <EntityTypeMapping TypeName="C3_Model.EMPLOYEE">
               <MappingFragment StoreEntitySet="EMPLOYEE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="EMP_FIRSTNAME" ColumnName="EMP_FIRSTNAME" />
@@ -3822,7 +3822,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ESTIMATE">
-            <EntityTypeMapping TypeName="UC3_Model.ESTIMATE">
+            <EntityTypeMapping TypeName="C3_Model.ESTIMATE">
               <MappingFragment StoreEntitySet="ESTIMATE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CLAIM_ID" ColumnName="CLAIM_ID" />
@@ -3836,7 +3836,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="FILE">
-            <EntityTypeMapping TypeName="UC3_Model.FILE">
+            <EntityTypeMapping TypeName="C3_Model.FILE">
               <MappingFragment StoreEntitySet="FILE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="FILE_NAME" ColumnName="FILE_NAME" />
@@ -3849,7 +3849,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="INSPECTION">
-            <EntityTypeMapping TypeName="UC3_Model.INSPECTION">
+            <EntityTypeMapping TypeName="C3_Model.INSPECTION">
               <MappingFragment StoreEntitySet="INSPECTION">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="DEALERSHIP_ID" ColumnName="DEALERSHIP_ID" />
@@ -3866,7 +3866,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="INSPECTION_FILE">
-            <EntityTypeMapping TypeName="UC3_Model.INSPECTION_FILE">
+            <EntityTypeMapping TypeName="C3_Model.INSPECTION_FILE">
               <MappingFragment StoreEntitySet="INSPECTION_FILE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="INSPECTION_ID" ColumnName="INSPECTION_ID" />
@@ -3876,7 +3876,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="INSPECTION_STATUS_CODE">
-            <EntityTypeMapping TypeName="UC3_Model.INSPECTION_STATUS_CODE">
+            <EntityTypeMapping TypeName="C3_Model.INSPECTION_STATUS_CODE">
               <MappingFragment StoreEntitySet="INSPECTION_STATUS_CODE">
                 <ScalarProperty Name="STATUS_CODE" ColumnName="STATUS_CODE" />
                 <ScalarProperty Name="STATUS_DESC" ColumnName="STATUS_DESC" />
@@ -3884,7 +3884,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="INSPECTION_TYPE_CODE">
-            <EntityTypeMapping TypeName="UC3_Model.INSPECTION_TYPE_CODE">
+            <EntityTypeMapping TypeName="C3_Model.INSPECTION_TYPE_CODE">
               <MappingFragment StoreEntitySet="INSPECTION_TYPE_CODE">
                 <ScalarProperty Name="INSPECTION_TYPE_CODE1" ColumnName="INSPECTION_TYPE_CODE" />
                 <ScalarProperty Name="TYPE_DESC" ColumnName="TYPE_DESC" />
@@ -3892,7 +3892,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="INVOICE">
-            <EntityTypeMapping TypeName="UC3_Model.INVOICE">
+            <EntityTypeMapping TypeName="C3_Model.INVOICE">
               <MappingFragment StoreEntitySet="INVOICE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="DATE" ColumnName="DATE" />
@@ -3903,7 +3903,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="INVOICE_ORDER">
-            <EntityTypeMapping TypeName="UC3_Model.INVOICE_ORDER">
+            <EntityTypeMapping TypeName="C3_Model.INVOICE_ORDER">
               <MappingFragment StoreEntitySet="INVOICE_ORDER">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="INVOICE_ID" ColumnName="INVOICE_ID" />
@@ -3913,7 +3913,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MEDIA_TYPE">
-            <EntityTypeMapping TypeName="UC3_Model.MEDIA_TYPE">
+            <EntityTypeMapping TypeName="C3_Model.MEDIA_TYPE">
               <MappingFragment StoreEntitySet="MEDIA_TYPE">
                 <ScalarProperty Name="MEDIA_TYPE_CODE" ColumnName="MEDIA_TYPE_CODE" />
                 <ScalarProperty Name="MEDIA_TYPE_DESC" ColumnName="MEDIA_TYPE_DESC" />
@@ -3921,7 +3921,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ORDER">
-            <EntityTypeMapping TypeName="UC3_Model.ORDER">
+            <EntityTypeMapping TypeName="C3_Model.ORDER">
               <MappingFragment StoreEntitySet="ORDER">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="DEALERSHIP_ID" ColumnName="DEALERSHIP_ID" />
@@ -3935,7 +3935,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ORDER_ITEMS">
-            <EntityTypeMapping TypeName="UC3_Model.ORDER_ITEMS">
+            <EntityTypeMapping TypeName="C3_Model.ORDER_ITEMS">
               <MappingFragment StoreEntitySet="ORDER_ITEMS">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="ORDER_ID" ColumnName="ORDER_ID" />
@@ -3948,7 +3948,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ORDER_STATUS_CODE">
-            <EntityTypeMapping TypeName="UC3_Model.ORDER_STATUS_CODE">
+            <EntityTypeMapping TypeName="C3_Model.ORDER_STATUS_CODE">
               <MappingFragment StoreEntitySet="ORDER_STATUS_CODE">
                 <ScalarProperty Name="STATUS_CODE" ColumnName="STATUS_CODE" />
                 <ScalarProperty Name="STATUS_DESC" ColumnName="STATUS_DESC" />
@@ -3956,7 +3956,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PAYMENT">
-            <EntityTypeMapping TypeName="UC3_Model.PAYMENT">
+            <EntityTypeMapping TypeName="C3_Model.PAYMENT">
               <MappingFragment StoreEntitySet="PAYMENT">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CHEQUE_ID" ColumnName="CHEQUE_ID" />
@@ -3966,7 +3966,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PROBLEM">
-            <EntityTypeMapping TypeName="UC3_Model.PROBLEM">
+            <EntityTypeMapping TypeName="C3_Model.PROBLEM">
               <MappingFragment StoreEntitySet="PROBLEM">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CLAIM_ID" ColumnName="CLAIM_ID" />
@@ -3983,7 +3983,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PROBLEM_DESCRIPTION">
-            <EntityTypeMapping TypeName="UC3_Model.PROBLEM_DESCRIPTION">
+            <EntityTypeMapping TypeName="C3_Model.PROBLEM_DESCRIPTION">
               <MappingFragment StoreEntitySet="PROBLEM_DESCRIPTION">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
@@ -3992,7 +3992,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PROBLEM_TYPE">
-            <EntityTypeMapping TypeName="UC3_Model.PROBLEM_TYPE">
+            <EntityTypeMapping TypeName="C3_Model.PROBLEM_TYPE">
               <MappingFragment StoreEntitySet="PROBLEM_TYPE">
                 <ScalarProperty Name="TYPE_CODE" ColumnName="TYPE_CODE" />
                 <ScalarProperty Name="TYPE_DESC" ColumnName="TYPE_DESC" />
@@ -4000,7 +4000,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PRODUCT">
-            <EntityTypeMapping TypeName="UC3_Model.PRODUCT">
+            <EntityTypeMapping TypeName="C3_Model.PRODUCT">
               <MappingFragment StoreEntitySet="PRODUCT">
                 <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
                 <ScalarProperty Name="PRODUCT_NAME" ColumnName="PRODUCT_NAME" />
@@ -4015,7 +4015,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PRODUCT_CATEGORY">
-            <EntityTypeMapping TypeName="UC3_Model.PRODUCT_CATEGORY">
+            <EntityTypeMapping TypeName="C3_Model.PRODUCT_CATEGORY">
               <MappingFragment StoreEntitySet="PRODUCT_CATEGORY">
                 <ScalarProperty Name="CATEGORY_CODE" ColumnName="CATEGORY_CODE" />
                 <ScalarProperty Name="CATEGORY_NAME" ColumnName="CATEGORY_NAME" />
@@ -4024,7 +4024,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PROVINCE">
-            <EntityTypeMapping TypeName="UC3_Model.PROVINCE">
+            <EntityTypeMapping TypeName="C3_Model.PROVINCE">
               <MappingFragment StoreEntitySet="PROVINCE">
                 <ScalarProperty Name="PROVINCE_CODE" ColumnName="PROVINCE_CODE" />
                 <ScalarProperty Name="PROVINCE_NAME" ColumnName="PROVINCE_NAME" />
@@ -4032,7 +4032,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="REPAIRSHOP">
-            <EntityTypeMapping TypeName="UC3_Model.REPAIRSHOP">
+            <EntityTypeMapping TypeName="C3_Model.REPAIRSHOP">
               <MappingFragment StoreEntitySet="REPAIRSHOP">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
@@ -4043,7 +4043,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="SIDE_CODE">
-            <EntityTypeMapping TypeName="UC3_Model.SIDE_CODE">
+            <EntityTypeMapping TypeName="C3_Model.SIDE_CODE">
               <MappingFragment StoreEntitySet="SIDE_CODE">
                 <ScalarProperty Name="SIDE_CODE1" ColumnName="SIDE_CODE" />
                 <ScalarProperty Name="SIDE_DESC" ColumnName="SIDE_DESC" />
@@ -4051,7 +4051,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="VEHICLE">
-            <EntityTypeMapping TypeName="UC3_Model.VEHICLE">
+            <EntityTypeMapping TypeName="C3_Model.VEHICLE">
               <MappingFragment StoreEntitySet="VEHICLE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="MODEL" ColumnName="MODEL" />
@@ -4065,7 +4065,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="VEHICLE_MAKE">
-            <EntityTypeMapping TypeName="UC3_Model.VEHICLE_MAKE">
+            <EntityTypeMapping TypeName="C3_Model.VEHICLE_MAKE">
               <MappingFragment StoreEntitySet="VEHICLE_MAKE">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="MAKE" ColumnName="MAKE" />
@@ -4073,7 +4073,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="VEHICLE_OWNER">
-            <EntityTypeMapping TypeName="UC3_Model.VEHICLE_OWNER">
+            <EntityTypeMapping TypeName="C3_Model.VEHICLE_OWNER">
               <MappingFragment StoreEntitySet="VEHICLE_OWNER">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CLIENT_ID" ColumnName="CLIENT_ID" />
@@ -4084,7 +4084,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="VEHICLE_PART">
-            <EntityTypeMapping TypeName="UC3_Model.VEHICLE_PART">
+            <EntityTypeMapping TypeName="C3_Model.VEHICLE_PART">
               <MappingFragment StoreEntitySet="VEHICLE_PART">
                 <ScalarProperty Name="PARTID" ColumnName="PARTID" />
                 <ScalarProperty Name="PART_DESC" ColumnName="PART_DESC" />
@@ -4093,7 +4093,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="WARRANTY">
-            <EntityTypeMapping TypeName="UC3_Model.WARRANTY">
+            <EntityTypeMapping TypeName="C3_Model.WARRANTY">
               <MappingFragment StoreEntitySet="WARRANTY">
                 <ScalarProperty Name="WARRANTY_NUM" ColumnName="WARRANTY_NUM" />
                 <ScalarProperty Name="EFFECTIVE_DATE" ColumnName="EFFECTIVE_DATE" />
@@ -4112,7 +4112,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="WARRANTY_STATUS">
-            <EntityTypeMapping TypeName="UC3_Model.WARRANTY_STATUS">
+            <EntityTypeMapping TypeName="C3_Model.WARRANTY_STATUS">
               <MappingFragment StoreEntitySet="WARRANTY_STATUS">
                 <ScalarProperty Name="STATUS_CODE" ColumnName="STATUS_CODE" />
                 <ScalarProperty Name="STATUS_DESC" ColumnName="STATUS_DESC" />
@@ -4120,7 +4120,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="WARRANTY_TYPE">
-            <EntityTypeMapping TypeName="UC3_Model.WARRANTY_TYPE">
+            <EntityTypeMapping TypeName="C3_Model.WARRANTY_TYPE">
               <MappingFragment StoreEntitySet="WARRANTY_TYPE">
                 <ScalarProperty Name="WARRANTY_TYPE_CODE" ColumnName="WARRANTY_TYPE_CODE" />
                 <ScalarProperty Name="NAME" ColumnName="NAME" />
@@ -4138,7 +4138,7 @@
     </edmx:Mappings>
   </edmx:Runtime>
   <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
-  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
     <Connection>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
@@ -4149,7 +4149,7 @@
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
-        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>
     </Options>
